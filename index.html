@@ -34,7 +34,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
    </head> 
 
 
-<script>
+<script> // contains javascript content of code
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 // alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
@@ -62,12 +62,12 @@ function addImage() { // function to add imagee onto canvas
   }; // closes function to load image onto canvas
 } // closes function to add iamge onto canvas
 
-function reset() {
- var b_canvas = document.getElementById("b");
- b_canvas.width = b_canvas.width;
-}
+function reset() { // function to reset canvas to original state (blank)
+ var b_canvas = document.getElementById("b"); // targets canvas variable so canvas goes to original state
+ b_canvas.width = b_canvas.width; // sets canvas to original state
+} // closes function to reset canvas
 
-</script>
+</script> // closes javascript content
 
 
 
