@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html> 
+<html> <!-- section containing html content of code -->
 <!-- The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only.  Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.
  
 THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
@@ -34,7 +34,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
    </head> 
 
 
-<script> // contains javascript content of code
+<script> // section below contains javascript content of code
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 // alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
@@ -67,11 +67,11 @@ function reset() { // function to reset canvas to original state (blank)
  b_canvas.width = b_canvas.width; // sets canvas to original state
 } // closes function to reset canvas
 
-</script> // closes javascript content
+</script> // closes section containing javascript content
 
 
 
-<style>	
+<style>	<!-- section below contains CSS (styling) content of code -->
 .body {
      margin: 0em;
 }
@@ -89,34 +89,34 @@ function reset() { // function to reset canvas to original state (blank)
     left: 0vw;
     z-index: 1;
 }
-</style>
+</style> <!-- closes section containing CSS (styling) content -->
 
-<body>
-<div id="header" class="w3-container w3-flat-carrot">
-	<h1>App6---HTML5-Canvas</h1>
-</div>
-
-<div id="content" class="w3-container">
-	<p> <canvas id="b" width="300" height="225" style="border:1px solid #000000"></canvas> </p> <!-- blank canvas -->
-
-<a href="#"  onclick="draw_b();" class="w3-btn w3-black"> Click to draw a rectangle</a> <!-- button that draws a rectangle onto the canvas when clicked -->
-
-<a href="#"  onclick="draw_name();" class="w3-btn w3-black"> Click to draw my name</a> <!-- button that draws my name onto the canvas when clicked -->
-
-<a href="#"  onclick="addImage();" class="w3-btn w3-black"> Click to add image</a> <!-- button that adds image onto the canvas when clicked -->
-
-<a href="#"  onclick="reset();" class="w3-btn w3-black"> Click to reset canvas</a> <!-- button that resets the canvas to original when clicked -->
+<body> <!-- section below contains body content of code (what is actually shown on the page) -->
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- section below contains header content -->
+		<h1>App6---HTML5-Canvas</h1> <!-- header text -->
+	</div> <!-- closes section containing header content -->
+	
+	<div id="content" class="w3-container"> <!-- section below contains content of code below header and above footer -->
+		<p> <canvas id="b" width="300" height="225" style="border:1px solid #000000"></canvas> </p> <!-- blank canvas -->
+	
+		<a href="#"  onclick="draw_b();" class="w3-btn w3-black"> Click to draw a rectangle</a> <!-- button that draws a rectangle onto the canvas when clicked -->
 		
+		<a href="#"  onclick="draw_name();" class="w3-btn w3-black"> Click to draw my name</a> <!-- button that draws my name onto the canvas when clicked -->
+		
+		<a href="#"  onclick="addImage();" class="w3-btn w3-black"> Click to add image</a> <!-- button that adds image onto the canvas when clicked -->
+		
+		<a href="#"  onclick="reset();" class="w3-btn w3-black"> Click to reset canvas</a> <!-- button that resets the canvas to original when clicked -->
+				
+		
+		<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p> <!-- disclaimer text -->
+		 	
+		<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p> <!-- another disclaimer -->
+		
+	</div> <!-- closes section containing content of code below header and above footer; added closing div tag to fix footer; missing in original code -->
+	
+	<footer class="w3-bottom w3-container w3-flat-carrot"> <!-- section below contains footer content of code -->
+		<p>DIY!</p> <!-- footer text -->
+	</footer> <!-- closes section containing footer content of code -->
 
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
- 	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-
-</div> <!-- added closing div tag to fix footer; missing in original code -->
-
-<footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
-</footer>
-
-</body>
-</html>
+</body> <!-- closes section containing body content of code -->
+</html> <!-- closes section containing html content -->
