@@ -58,8 +58,13 @@ function addImage() { // function to add imagee onto canvas
   var cat = new Image();
   cat.src = "cat-staring-meme.jpeg";
   cat.onload = function() {
-    context.drawImage(cat, 0, 0);
+    b_context.drawImage(cat, 0, 0);
   };
+}
+
+function reset() {
+ var b_canvas = document.getElementById("b");
+ b_canvas.width = b_canvas.width;
 }
 
 </script>
@@ -105,6 +110,8 @@ function addImage() { // function to add imagee onto canvas
 <a href="#"  onclick="draw_name();" class="w3-btn w3-black"> Click to draw my name</a> <!-- button that draws my name onto the canvas when clicked -->
 
 <a href="#"  onclick="addImage();" class="w3-btn w3-black"> Click to add image</a> <!-- button that adds image onto the canvas when clicked -->
+
+<a href="#"  onclick="reset();" class="w3-btn w3-black"> Click to reset canvas</a> <!-- button that resets the canvas to original when clicked -->
 
 </div> <!-- added closing div tag to fix footer; missing in original code -->
 
