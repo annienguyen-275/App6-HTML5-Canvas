@@ -43,24 +43,24 @@ function draw_b() { // function to draw rectangle onto canvas
   var b_canvas = document.getElementById("b"); // targets canvas variable so rectangle goes inside canvas
   var b_context = b_canvas.getContext("2d"); // provides 2d context so code can run (there's no 3-d canvas yet) 
   b_context.fillRect(50, 25, 150, 100); // codes for drawing context, where all drawing methods and properties are defined (in this case, to fill the rectangle)
-}
+} // closes function to draw rectangle onto canvas
 
 function draw_name() { // function to draw my name onto canvas
   var b_canvas = document.getElementById("b"); // targets canvas variable so rectangle goes inside canvas
   var b_context = b_canvas.getContext("2d"); // provides 2d context so code can run (there's no 3-d canvas yet) 
   b_context.font = "bold 12px sans-serif"; // sets font, text weight, and text size of my name
   b_context.fillText("Annie Nguyen", 100, 150); // codes for drawing context (text and coordinates)
-}
+} // closes function to draw name onto canvas
 
 function addImage() { // function to add imagee onto canvas
   var b_canvas = document.getElementById("b"); // targets canvas variable so rectangle goes inside canvas
   var b_context = b_canvas.getContext("2d"); // provides 2d context so code can run (there's no 3-d canvas yet) 
-  var cat = new Image();
-  cat.src = "cat-staring-meme.jpeg";
-  cat.onload = function() {
-    b_context.drawImage(cat, 0, 0);
-  };
-}
+  var cat = new Image(); //  defines cat as image variable
+  cat.src = "cat-staring-meme.jpeg"; // provides source for image
+  cat.onload = function() { // function to load image onto canvas
+    b_context.drawImage(cat, 0, 0); // codes for image context (image and coordinates)
+  }; // closes function to laod image onto canvas
+} // closes function to add iamge onto canvas
 
 function reset() {
  var b_canvas = document.getElementById("b");
