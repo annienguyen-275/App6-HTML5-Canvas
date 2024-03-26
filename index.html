@@ -44,6 +44,13 @@ function draw_b() { // function to draw rectangle onto canvas
   var b_context = b_canvas.getContext("2d"); // provides 2d context so code can run (there's no 3-d canvas yet) 
   b_context.fillRect(50, 25, 150, 100); // codes for drawing context, where all drawing methods and properties are defined (in this case, to fill the rectangle)
 }
+
+function draw_name() { // function to draw my name onto canvas
+  var b_canvas = document.getElementById("b"); // targets canvas variable so rectangle goes inside canvas
+  var b_context = b_canvas.getContext("2d"); // provides 2d context so code can run (there's no 3-d canvas yet) 
+  b_context.font = "bold 12px sans-serif"; // sets font, text weight, and text size of my name
+  b_context.fillText("Annie Nguyen", 100, 150); // codes for drawing context (text and coordinates)
+}
 </script>
 
 
@@ -83,6 +90,8 @@ function draw_b() { // function to draw rectangle onto canvas
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
 <a href="#"  onclick="draw_b();" class="w3-btn w3-black"> Click to draw a rectangle</a> <!-- button that draws a rectangle onto the canvas when clicked -->
+
+<a href="#"  onclick="draw_name();" class="w3-btn w3-black"> Click to draw my name</a> <!-- button that draws my name onto the canvas when clicked -->
 
 </div> <!-- added closing div tag to fix footer; missing in original code -->
 
