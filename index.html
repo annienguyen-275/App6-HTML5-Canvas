@@ -45,14 +45,14 @@ function draw_b() { // function to draw rectangle onto canvas
 } // closes function to draw rectangle onto canvas
 
 function draw_name() { // function to draw my name onto canvas
-  var b_canvas = document.getElementById("b"); // targets canvas variable so rectangle goes inside canvas
+  var b_canvas = document.getElementById("b"); // targets canvas variable so text goes inside canvas
   var b_context = b_canvas.getContext("2d"); // provides 2d context so code can run (there's no 3-d canvas yet) 
   b_context.font = "bold 12px sans-serif"; // sets font, text weight, and text size of my name
   b_context.fillText("Annie Nguyen", 100, 150); // codes for drawing context (text and coordinates)
 } // closes function to draw name onto canvas
 
 function draw_image() { // function to add image onto canvas
-  var b_canvas = document.getElementById("b"); // targets canvas variable so rectangle goes inside canvas
+  var b_canvas = document.getElementById("b"); // targets canvas variable so image goes inside canvas
   var b_context = b_canvas.getContext("2d"); // provides 2d context so code can run (there's no 3-d canvas yet) 
   var cat = new Image(); //  defines cat as image variable
   cat.src = "cat-staring-meme.jpeg"; // provides source for image
