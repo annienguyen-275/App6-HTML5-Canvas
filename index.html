@@ -56,8 +56,8 @@ function draw_image() { // function to add image onto canvas
   var b_context = b_canvas.getContext("2d"); // provides 2d context so code can run (there's no 3-d canvas yet) 
   var cat = new Image(); //  defines cat as image variable
   cat.src = "cat-staring-meme.jpeg"; // provides source for image
-  cat.onload = function() { // function to load image onto canvas
-    b_context.drawImage(cat, 0, 0); // codes for image context (image and coordinates)
+  cat.onload = function() { // triggers function once web page has loaded (and after function draw_image has been triggered)
+    b_context.drawImage(cat, 0, 0); // codes for image context (image source and coordinates)
   }; // closes function to load image onto canvas
 } // closes function to add image onto canvas
 	
