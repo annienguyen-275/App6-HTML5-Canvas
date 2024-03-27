@@ -58,7 +58,7 @@ function draw_image() { // function to add image onto canvas
   cat.src = "cat-staring-meme.jpeg"; // provides source for image
   cat.onload = function() { // triggers function once web page has loaded (and after function draw_image has been triggered)
     b_context.drawImage(cat, 0, 0); // codes for image context (image source and coordinates)
-  }; // closes function to load image onto canvas
+  }; // closes function with onload attribute
 } // closes function to add image onto canvas
 	
 function reset() { // function to reset canvas to original state (blank)
