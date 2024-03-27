@@ -33,8 +33,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
 
-<img id="cat" src="cat-staring-meme.jpeg" alt="cat staring at camera" width="177" height="177">
-
 <script> // section below contains javascript content of code
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 // alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
@@ -53,13 +51,7 @@ function draw_name() { // function to draw my name onto canvas
   b_context.fillText("Annie Nguyen", 100, 150); // codes for drawing context (text and coordinates)
 } // closes function to draw name onto canvas
 
-window.onload = function drawImage() {
-  var b_canvas = document.getElementById("b");
-  var b_context = canvas.getContext("2d");
-  var cat = document.getElementById("cat");
-  b_context.drawImage(cat, 0, 0);
-};
-/* function addImage() { // function to add image onto canvas
+function draw_image() { // function to add image onto canvas
   var b_canvas = document.getElementById("b"); // targets canvas variable so rectangle goes inside canvas
   var b_context = b_canvas.getContext("2d"); // provides 2d context so code can run (there's no 3-d canvas yet) 
   var cat = new Image(); //  defines cat as image variable
@@ -68,7 +60,6 @@ window.onload = function drawImage() {
     b_context.drawImage(cat, 0, 0); // codes for image context (image and coordinates)
   }; // closes function to load image onto canvas
 } // closes function to add image onto canvas
-*/ 
 	
 function reset() { // function to reset canvas to original state (blank)
  var b_canvas = document.getElementById("b"); // targets canvas variable so canvas goes to original state
@@ -111,7 +102,7 @@ function reset() { // function to reset canvas to original state (blank)
 		
 		<a href="#"  onclick="draw_name();" class="w3-btn w3-black"> Click to draw my name</a> <!-- button that draws my name onto the canvas when clicked -->
 		
-		<a href="#"  onclick="drawImage();" class="w3-btn w3-black"> Click to add image</a> <!-- button that adds image onto the canvas when clicked -->
+		<a href="#"  onclick="draw_image();" class="w3-btn w3-black"> Click to add image</a> <!-- button that adds image onto the canvas when clicked -->
 		
 		<a href="#"  onclick="reset();" class="w3-btn w3-black"> Click to reset canvas</a> <!-- button that resets the canvas to original when clicked -->
 				
