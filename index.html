@@ -54,8 +54,8 @@ function draw_name() { // function to draw my name onto canvas
 } // closes function to draw name onto canvas
 
 window.onload = function drawImage() {
-  var canvas = document.getElementById("b");
-  var context = canvas.getContext("2d");
+  var b_canvas = document.getElementById("b");
+  var b_context = canvas.getContext("2d");
   var cat = document.getElementById("cat");
   b_context.drawImage(cat, 0, 0);
 };
