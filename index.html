@@ -33,6 +33,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
 
+<img id="cat" src="images/cat-staring-meme.jpeg" alt="cat staring at camera" width="177" height="177">
 
 <script> // section below contains javascript content of code
 var docMod = document.lastModified; // loads last modified time stamp into docMod variable
@@ -52,7 +53,13 @@ function draw_name() { // function to draw my name onto canvas
   b_context.fillText("Annie Nguyen", 100, 150); // codes for drawing context (text and coordinates)
 } // closes function to draw name onto canvas
 
-function addImage() { // function to add imagee onto canvas
+window.onload = function drawImage() {
+  var canvas = document.getElementById("b");
+  var context = canvas.getContext("2d");
+  var cat = document.getElementById("cat");
+  b_context.drawImage(cat, 0, 0);
+};
+/* function addImage() { // function to add image onto canvas
   var b_canvas = document.getElementById("b"); // targets canvas variable so rectangle goes inside canvas
   var b_context = b_canvas.getContext("2d"); // provides 2d context so code can run (there's no 3-d canvas yet) 
   var cat = new Image(); //  defines cat as image variable
@@ -60,8 +67,9 @@ function addImage() { // function to add imagee onto canvas
   cat.onload = function() { // function to load image onto canvas
     b_context.drawImage(cat, 0, 0); // codes for image context (image and coordinates)
   }; // closes function to load image onto canvas
-} // closes function to add iamge onto canvas
-
+} // closes function to add image onto canvas
+*/ 
+	
 function reset() { // function to reset canvas to original state (blank)
  var b_canvas = document.getElementById("b"); // targets canvas variable so canvas goes to original state
  b_canvas.width = b_canvas.width; // sets canvas to original state
